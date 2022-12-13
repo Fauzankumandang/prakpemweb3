@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan Percobaan Praktikum Pemweb 2</title>
+</head>
+
+<style>
+header{
+    background-color: darkgrey;
+    Font-family:verdana;
+}
+
+h1{ 
+    color:aliceblue; 
+}
+
+h2{
+    background-color:rgb(169, 169, 169);
+    color:aqua;
+    display: flex;
+    width:180px;
+    height:40px;
+    font-size:16px;
+}
+
+.navigasi{
+    background-color:aqua;
+    height: 20px;
+    width: auto;
+    padding: auto;
+    text-align: right;
+}
+
+.perkenalan{
+    width:55%;
+    height:230px;
+    font-size:15px;
+    float: left;
+    background-color: aqua;
+}
+.pengalaman{
+    width:100%;
+    height:250px;
+    font-size:15px;
+    float: left;
+}
+.video{ 
+    width:40%;
+    height:160px;
+    float: right;
+}
+
+.pertanyaan{
+    width:500px;
+    height:300px;
+    font-size:15px;
+    background-color: aqua;
+}
+
+@media (max-width: 720px) {
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    iframe {
+      width: 210px;
+      height: 115px;
+      background-color: aqua;
+      border-radius: 10px;
+      color: white;
+    }
+  
+    img {
+      width: 70px;
+      background-color: aqua;
+      border-radius: 50%;
+      color: white;
+    }
+  
+    table {
+      width: 100px;
+      border: none;
+      background-color: aqua;
+      color: white;
+      border-radius: 10px;
+    }
+    #img {
+      width: 50px;
+      height: 80px;
+    }
+  }
+</style> 
+    <header> 
+        <table>
+            <tr> 
+                <td> <img src="https://github.com/syafiraaliffinda/foto-formal/blob/main/foto%20formal%20dadang.jpeg?raw=true" alt="foto dadang" width="250" height="250"></td>
+                <td>
+                    <h1>Hai, saya Fauzan tofikanagari kumandang </h1>
+                    <br><b>seorang mahasiswa dari jurusan Teknik Informatika</br></b>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <nav>
+        <div class="navigasi">
+            <a href="#tentang">Tentang Saya</a>
+            <a href="#pengalaman">Pengalaman Kepanitian</a>
+            <a href="#hubungi saya">hubungi saya</a>
+
+        </div>
+    </nav>
+    <br>
+    <section>
+        <br>
+        <div class="video">
+            <iframe width="684" height="385" src="https://www.youtube.com/embed/F8JuoaDeTfU" title="Ujian Olahraga Praktik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section> 
+
+            <br>
+            <div class="perkenalan">
+            <h2 id="tentang">Tentang Saya</h2>
+            <p> Saya merupakan mahasiswa semester 5 yang aktif dalam berorganisasi. Cara saya membangun personal branding yaitu dengan mengikuti organisasi dikampus, berkomunikasi dengan sesama, memecahkan masalah dalam sebuah tim serta bekerja sama dalam tim, dan belajar tentang bahasa pemograman</p>
+            </div>
+
+            <br>
+            <div class="pengalaman">
+                <h2 id="pengalaman">Pengalaman Kepanitian:</h2>
+                <table border="5">
+                    <thead>
+                        <tr style="background-color:aqua;">
+                          <th>No</th>
+                          <th>Nama Kegiatan</th>
+                          <th>Divisi</th>
+                          <th>Mulai</th>
+                          <th>Selesai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>ITERA Olympics</td>
+                          <td>Staff Acara</td>
+                          <td>2021</td>
+                          <td>2021</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>TERA Esport</td>
+                          <td>Staff PC game</td>
+                          <td>2021</td>
+                          <td>2022</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Riuh Wisuda</td>
+                          <td>Kadiv Koordinator Lapangan</td>
+                          <td>2022</td>
+                          <td>2022</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Kaderisasi</td>
+                            <td>Komisi Disiplin</td>
+                            <td>2022</td>
+                            <td>2022</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>First Gathering</td>
+                            <td>Kadiv Acara</td>
+                            <td>2021</td>
+                            <td>2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+        </div>
+    <div class="pertanyaan">
+    <h2 id="hubungi saya">Hubungi Saya</h2>
+    <div class="pertanyaan">
+        <form>
+            <label for="Nama">Nama :</label>
+            <input type="text" id="nama" name="title" >
+        </form>
+        <p>Apakah anda telah menonton video saya?</p>
+        <form >
+            <input type="radio" id="belum" name="vid_belum" value="belum">
+            <label for="belum">belum Menonton</label><br>
+            <input type="radio" id="sudah" name="vid_sudah" value="sudah">
+            <label for="sudah">sudah Menonton</label><br>
+            <input type="radio" id="akan Menonton" name="vid_akan" value="akan">
+            <label for="akan menonton">akan Menonton</label><br>
+        <br>
+        <p>bagaimana pendapat anda mengenai video saya?</p>
+            <input type="checkbox" name="Video" id="sempurna" value="sempurna">
+            <label for="sempurna">sempurna</label><br>
+            <input type="checkbox" name="Video" id="Kurang sempurna" value="kurang sempurna">
+            <label for="Kurang sempurna">Kurang sempurna</label><br>
+            <input type="checkbox" name="Video" id="tidak suka" value="tidak suka">
+            <label for="tidak suka">tidak suka</label><br>    
+            <button type="button">Kirim</button>
+        <br>
+            </form>
+
+    
+</body>
+</html>
